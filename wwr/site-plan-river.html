@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Rivers Subpage Site Plan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Delius:wght@400&family=Roboto+Flex:wght@300;400;700&display=swap');
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 4em;
+      font-size: 18px;
+      text-align: center;
+      font-family: 'Roboto Flex', sans-serif;
+      background-color: #f9f9f9;
+    }
+    
+    header {
+      padding: 1em;
+      text-align: center;
+      color: #BE7C4D;
+      background-color: #353238;
+      border-radius: 10px;
+      margin-bottom: 2em;
+    }
+    
+    header h1 {
+      font-family: 'Delius', cursive;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    
+    header h2 {
+      font-family: 'Roboto Flex', sans-serif;
+      font-weight: 300;
+      margin: 0.5em 0;
+    }
+    
+    main {
+      background-color: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+      font-family: 'Delius', cursive;
+      color: #92140C;
+      border-bottom: 3px solid #BE7C4D;
+      padding-bottom: 0.5em;
+    }
+    
+    h3 {
+      font-family: 'Delius', cursive;
+      color: #BE5A38;
+      margin-top: 2em;
+    }
+    
+    h4 {
+      color: #353238;
+      font-weight: 700;
+    }
+    
+    p {
+      text-align: left;
+      line-height: 1.6;
+      color: #353238;
+    }
+    
+    .colored {
+      background-color: #BE7C4D;
+      color: white;
+      padding: 1em;
+      border-radius: 5px;
+    }
+    
+    nav {
+      background-color: #92140C;
+      line-height: 3em;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 2em 0;
+      border-radius: 5px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 2em;
+      font-weight: bold;
+    }
+    
+    nav a:hover {
+      color: #BE7C4D;
+    }
+    
+    .wireframe-container {
+      background-color: #f5f5f5;
+      border: 2px solid #353238;
+      border-radius: 10px;
+      padding: 2em;
+      margin: 2em 0;
+    }
+    
+    .wireframe {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin: 1em 0;
+      min-height: 600px;
+      position: relative;
+      border-radius: 5px;
+    }
+    
+    .wireframe-element {
+      border: 2px dashed #BE7C4D;
+      padding: 1em;
+      margin: 1em 0;
+      background-color: #f9f9f9;
+      border-radius: 3px;
+    }
+    
+    .header-wire {
+      height: 80px;
+      background-color: #353238;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2em;
+    }
+    
+    .nav-wire {
+      height: 50px;
+      background-color: #92140C;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+    }
+    
+    .hero-wire {
+      height: 200px;
+      background-color: #BE7C4D;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+    }
+    
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin: 2em 0;
+    }
+    
+    .river-section {
+      border: 2px solid #BE5A38;
+      padding: 1.5em;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    
+    .footer-wire {
+      height: 60px;
+      background-color: #353238;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2em;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    ul {
+      text-align: left;
+      color: #353238;
+    }
+    
+    .content-requirements {
+      background-color: #BE7C4D;
+      color: white;
+      padding: 1.5em;
+      border-radius: 10px;
+      margin: 2em 0;
+    }
+    
+    .content-requirements h4 {
+      color: white;
+      margin-top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Rivers Subpage Site Plan</h1>
+    <h2>N0@1r Rafting Company</h2>
+    <h2>Page 2: Our Rivers</h2>
+  </header>
+  
+  <main>
+    <hr />
+    <h2>Page Purpose & Content</h2>
+    
+    <h3>Page Purpose</h3>
+    <p>The Rivers page will showcase the different rivers available for rafting adventures, highlighting the unique characteristics, difficulty levels, and scenic features of each waterway. This page helps customers choose the perfect river experience based on their skill level and adventure preferences.</p>
+
+    <h3>Target Audience</h3>
+    <p>Families and adventure seekers looking to understand their options for river rafting experiences, from beginner-friendly floats to challenging whitewater rapids.</p>
+
+    <hr />
+    <h2>Page Content Structure</h2>
+    
+    <div class="content-requirements">
+      <h4>Required Elements:</h4>
+      <ul>
+        <li>Consistent header with logo and navigation</li>
+        <li>Page title/hero section</li>
+        <li>At least 3 different rivers with descriptions</li>
+        <li>Difficulty ratings for each river</li>
+        <li>Scenic highlights and key features</li>
+        <li>High-quality river images</li>
+        <li>Consistent footer with contact information</li>
+      </ul>
+    </div>
+
+    <h3>Rivers to Feature</h3>
+    <div class="content-grid">
+      <div class="river-section">
+        <h4>Colorado River</h4>
+        <p><strong>Difficulty:</strong> Beginner to Intermediate<br>
+        <strong>Length:</strong> 5-15 miles<br>
+        <strong>Features:</strong> Glenwood Canyon, family-friendly sections, stunning red rock formations</p>
+      </div>
+      
+      <div class="river-section">
+        <h4>Roaring Fork River</h4>
+        <p><strong>Difficulty:</strong> Intermediate to Advanced<br>
+        <strong>Length:</strong> 8-12 miles<br>
+        <strong>Features:</strong> Technical rapids, pristine wilderness, challenging Class III-IV rapids</p>
+      </div>
+      
+      <div class="river-section">
+        <h4>Arkansas River</h4>
+        <p><strong>Difficulty:</strong> All Levels<br>
+        <strong>Length:</strong> 6-18 miles<br>
+        <strong>Features:</strong> Diverse sections from gentle floats to extreme whitewater, Royal Gorge</p>
+      </div>
+      
+      <div class="river-section">
+        <h4>Green River</h4>
+        <p><strong>Difficulty:</strong> Beginner<br>
+        <strong>Length:</strong> 10-20 miles<br>
+        <strong>Features:</strong> Scenic canyon views, wildlife viewing, perfect for first-time rafters</p>
+      </div>
+    </div>
+
+    <hr />
+    <h2>Wireframe Design</h2>
+    
+    <h3>Rivers Page Wireframe</h3>
+    <div class="wireframe-container">
+      <div class="wireframe">
+        <!-- Header Section -->
+        <div class="header-wire">
+          <div>LOGO</div>
+          <div>N0@1r Rafting Company</div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="nav-wire">
+          <span>Home</span>
+          <span><strong>Rivers</strong></span>
+          <span>Contact Us</span>
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="hero-wire">
+          <div>Discover Our Rivers<br><small>Choose Your Adventure</small></div>
+        </div>
+        
+        <!-- Content Grid -->
+        <div class="content-grid">
+          <div class="wireframe-element">
+            <strong>Colorado River</strong><br>
+            [River Image]<br>
+            Difficulty: ★★☆☆☆<br>
+            Description text...<br>
+            Key features list
+          </div>
+          
+          <div class="wireframe-element">
+            <strong>Roaring Fork River</strong><br>
+            [River Image]<br>
+            Difficulty: ★★★★☆<br>
+            Description text...<br>
+            Key features list
+          </div>
+          
+          <div class="wireframe-element">
+            <strong>Arkansas River</strong><br>
+            [River Image]<br>
+            Difficulty: ★★★☆☆<br>
+            Description text...<br>
+            Key features list
+          </div>
+          
+          <div class="wireframe-element">
+            <strong>Green River</strong><br>
+            [River Image]<br>
+            Difficulty: ★☆☆☆☆<br>
+            Description text...<br>
+            Key features list
+          </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="wireframe-element" style="text-align: center; background-color: #BE7C4D; color: white;">
+          <strong>Ready to Book Your River Adventure?</strong><br>
+          [Contact Us Button]
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer-wire">
+          Contact Info | Social Media Links | Copyright
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <h2>Design Principles Applied</h2>
+    
+    <h3>Consistency</h3>
+    <p>The Rivers page maintains the same header, navigation, footer, color scheme, and typography as the home page to ensure brand consistency and user familiarity.</p>
+    
+    <h3>Hierarchy</h3>
+    <p>Clear visual hierarchy with the hero image at top, followed by river sections organized in a grid layout. Each river section uses consistent formatting with difficulty ratings prominently displayed.</p>
+    
+    <h3>Proximity & Alignment</h3>
+    <p>Related information is grouped together within each river section. The grid layout creates clean alignment and makes it easy to compare different river options.</p>
+    
+    <h3>Contrast</h3>
+    <p>Difficulty ratings use star systems and color coding to make skill levels immediately apparent. Images provide visual contrast to text content.</p>
+
+    <hr />
+    <h2>Updated Navigation</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" style="color: #BE7C4D;">Rivers</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    
+    <p class="colored">
+      The Rivers page serves as the bridge between initial interest (Home page) and taking action (Contact Us page), providing the detailed information customers need to choose their perfect rafting adventure.
+    </p>
+  </main>
+</body>
+
+</html>
