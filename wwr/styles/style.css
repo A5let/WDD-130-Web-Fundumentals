@@ -200,6 +200,69 @@ footer {
     transform: scale(1.1);
 }
 
+/* Contact Page Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 2em 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.guides-section {
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.guides-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.contact-info {
+    grid-column: 1/3;
+    background-color: #fcfbfb;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.contact-form {
+    margin-top: 2em;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #396E94;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #396E94;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    justify-self: start;
+}
+
+.contact-form button:hover {
+    background-color: #D4AC0D;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -242,6 +305,15 @@ footer {
     }
     footer {
         margin-top: 25px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    
+    .guides-section,
+    .contact-info {
+        grid-column: 1/2;
     }
 }
 
