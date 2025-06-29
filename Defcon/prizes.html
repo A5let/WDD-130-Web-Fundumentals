@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>DEFCON 2025 - Prizes & Benefits</title>
+    <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
+    <style>
+        /* Additional styles for the main site */
+        body {
+            font-family: var(--paragraph-font);
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        
+        header {
+            background-color: var(--paragraph-background-color);
+            color: var(--headline-color-on-color);
+            padding: 1em;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: var(--headline-color-on-color);
+            font-family: var(--heading-font);
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            background-color: var(--nav-background-color);
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav a {
+            display: inline-block;
+            padding: 1em 2em;
+            text-decoration: none;
+            color: var(--nav-link-color);
+            font-family: var(--heading-font);
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--nav-hover-background-color);
+            color: var(--nav-hover-link-color);
+        }
+        
+        nav a.current {
+            background-color: var(--accent1-color);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .page-title h2 {
+            font-family: var(--heading-font);
+            color: var(--headline-color-on-white);
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        .benefits-section {
+            margin-bottom: 3em;
+        }
+        
+        .benefits-section h3 {
+            font-family: var(--heading-font);
+            color: var(--headline-color-on-white);
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            border-bottom: 3px solid var(--accent1-color);
+            padding-bottom: 0.5em;
+        }
+        
+        .benefits-section p {
+            font-family: var(--paragraph-font);
+            color: var(--paragraph-color-on-white);
+            line-height: 1.6;
+            margin-bottom: 1em;
+            font-size: 1.1em;
+        }
+        
+        .highlight-box {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2em;
+            border-radius: 8px;
+            margin: 2em 0;
+            text-align: center;
+        }
+        
+        .highlight-box h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        
+        .highlight-box p {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 0;
+        }
+        
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin: 3em 0;
+        }
+        
+        .image-gallery img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .prizes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+            margin: 2em 0;
+        }
+        
+        .prize-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent1-color);
+        }
+        
+        .prize-card h4 {
+            font-family: var(--heading-font);
+            color: var(--headline-color-on-white);
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+        
+        .prize-card p {
+            color: var(--paragraph-color-on-white);
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .testimonial-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2em;
+            border-radius: 8px;
+            margin: 3em 0;
+        }
+        
+        .testimonial-section h3 {
+            color: white;
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.8em;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 1.5em 0;
+            padding: 1em;
+            border-left: 4px solid rgba(255,255,255,0.3);
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 1em;
+        }
+        
+        footer {
+            background-color: var(--paragraph-background-color);
+            color: var(--headline-color-on-color);
+            text-align: center;
+            padding: 2em;
+            margin-top: 3em;
+        }
+        
+        footer p {
+            color: var(--headline-color-on-color);
+            margin: 0.5em 0;
+        }
+        
+        footer a {
+            color: var(--nav-link-color);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .image-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .image-gallery img {
+                max-width: 90%;
+            }
+            
+            nav a {
+                display: block;
+                padding: 0.8em;
+            }
+            
+            .prizes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/Defcon Logo.jpg" alt="DEFCON Logo" style="max-height: 80px; margin-bottom: 1em;">
+        <h1>DEFCON 2025</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="prizes.html" class="current">Prizes & Benefits</a>
+    </nav>
+    
+    <main>
+        <section class="page-title">
+            <h2>Prizes & Benefits</h2>
+        </section>
+        
+        <section class="benefits-section">
+            <h3>Prizes and Recognition</h3>
+            <p>DEFCON offers a variety of prizes for challenge winners, including exclusive badges, tech gadgets, and sponsored gear. Winning a DEFCON competition is a prestigious achievement that can open doors in the cybersecurity industry.</p>
+        </section>
+        
+        <div class="prizes-grid">
+            <div class="prize-card">
+                <h4>Exclusive DEFCON Badges</h4>
+                <p>Limited edition electronic badges that are highly coveted collector's items and proof of your DEFCON achievement.</p>
+            </div>
+            
+            <div class="prize-card">
+                <h4>Tech Gadgets</h4>
+                <p>Latest cybersecurity tools, hardware hacking devices, and cutting-edge technology from our sponsors.</p>
+            </div>
+            
+            <div class="prize-card">
+                <h4>Cash Prizes</h4>
+                <p>Substantial monetary rewards for top performers in major competitions and challenge categories.</p>
+            </div>
+            
+            <div class="prize-card">
+                <h4>Sponsored Gear</h4>
+                <p>Professional-grade software licenses, training courses, and equipment from industry-leading companies.</p>
+            </div>
+        </div>
+        
+        <div class="image-gallery">
+            <img src="images/page3Image1.jpg" alt="DEFCON prize ceremony with winners">
+            <img src="images/page3Image2.jpg" alt="Exclusive DEFCON badges and awards">
+        </div>
+        
+        <section class="benefits-section">
+            <h3>Networking Opportunities</h3>
+            <p>Beyond prizes, DEFCON is renowned for its networking potential. Attendees can meet industry leaders, government officials, and ethical hackers from around the world. The site will provide tips on making connections, attending after-hours events, and joining special interest groups.</p>
+        </section>
+        
+        <div class="highlight-box">
+            <h3>Connect with 30,000+ Professionals</h3>
+            <p>DEFCON brings together the largest gathering of cybersecurity professionals, researchers, and enthusiasts in the world. Make connections that will advance your career and expand your knowledge.</p>
+        </div>
+        
+        <section class="benefits-section">
+            <h3>Professional Growth</h3>
+            <p>Participating in DEFCON can boost your career by exposing you to the latest trends, tools, and techniques in cybersecurity. The site will feature testimonials from past attendees who have leveraged their DEFCON experience to land jobs, internships, and speaking opportunities.</p>
+        </section>
+        
+        <section class="testimonial-section">
+            <h3>Success Stories</h3>
+            
+            <div class="testimonial">
+                "DEFCON changed my career trajectory completely. The connections I made led to job interviews at three major cybersecurity firms, and the skills I learned in the villages gave me the confidence to tackle real-world security challenges."
+                <div class="testimonial-author">- Sarah Chen, Security Analyst</div>
+            </div>
+            
+            <div class="testimonial">
+                "Winning the CTF competition at DEFCON opened doors I never imagined. Not only did I receive amazing prizes, but the recognition led to speaking opportunities at other conferences and a promotion at my company."
+                <div class="testimonial-author">- Marcus Rodriguez, Penetration Tester</div>
+            </div>
+            
+            <div class="testimonial">
+                "As a student, DEFCON was intimidating at first, but the community was incredibly welcoming. The skills I learned and the mentors I met helped me land my first cybersecurity internship."
+                <div class="testimonial-author">- Alex Thompson, Cybersecurity Student</div>
+            </div>
+        </section>
+        
+        <section class="benefits-section">
+            <h3>Why Choose This Site?</h3>
+            <p>Our site stands out by offering comprehensive, well-organized, and regularly updated information. We focus on the needs of both newcomers and veterans, making it easy to find answers and take action. The official DEFCON 2025 Information Site is your trusted source for everything you need to succeed at the event.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 DEFCON Information Site | Everett Woolley | WDD 130-A2</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p>Contact: info@defcon2025.com | Follow us on social media for updates</p>
+    </footer>
+</body>
+</html>
