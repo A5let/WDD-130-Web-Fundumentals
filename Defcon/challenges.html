@@ -3,199 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>DEFCON 2025 - Challenges</title>
-    <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
-    <style>
-        /* Additional styles for the main site */
-        body {
-            font-family: var(--paragraph-font);
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
-        
-        header {
-            background-color: var(--paragraph-background-color);
-            color: var(--headline-color-on-color);
-            padding: 1em;
-            text-align: center;
-        }
-        
-        header h1 {
-            color: var(--headline-color-on-color);
-            font-family: var(--heading-font);
-            margin: 0;
-            font-size: 2.5em;
-        }
-        
-        nav {
-            background-color: var(--nav-background-color);
-            padding: 0;
-            text-align: center;
-        }
-        
-        nav a {
-            display: inline-block;
-            padding: 1em 2em;
-            text-decoration: none;
-            color: var(--nav-link-color);
-            font-family: var(--heading-font);
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        
-        nav a:hover {
-            background-color: var(--nav-hover-background-color);
-            color: var(--nav-hover-link-color);
-        }
-        
-        nav a.current {
-            background-color: var(--accent1-color);
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2em;
-        }
-        
-        .page-title {
-            text-align: center;
-            margin-bottom: 2em;
-        }
-        
-        .page-title h2 {
-            font-family: var(--heading-font);
-            color: var(--headline-color-on-white);
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-        }
-        
-        .challenges-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2em;
-            margin: 3em 0;
-        }
-        
-        .challenge-card {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 2em;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-left: 5px solid var(--accent1-color);
-        }
-        
-        .challenge-card h3 {
-            font-family: var(--heading-font);
-            color: var(--headline-color-on-white);
-            font-size: 1.5em;
-            margin-top: 0;
-            margin-bottom: 1em;
-        }
-        
-        .challenge-card p {
-            font-family: var(--paragraph-font);
-            color: var(--paragraph-color-on-white);
-            line-height: 1.6;
-        }
-        
-        .intro-section {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 2em;
-            border-radius: 8px;
-            margin-bottom: 3em;
-            text-align: center;
-        }
-        
-        .intro-section p {
-            color: white;
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin: 0;
-        }
-        
-        .image-gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 2em;
-            margin: 3em 0;
-        }
-        
-        .image-gallery img {
-            max-width: 45%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .schedule-info {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2em;
-            border-radius: 8px;
-            margin: 2em 0;
-            text-align: center;
-        }
-        
-        .schedule-info h3 {
-            color: white;
-            margin-top: 0;
-        }
-        
-        .schedule-info p {
-            color: white;
-            font-size: 1.1em;
-        }
-        
-        footer {
-            background-color: var(--paragraph-background-color);
-            color: var(--headline-color-on-color);
-            text-align: center;
-            padding: 2em;
-            margin-top: 3em;
-        }
-        
-        footer p {
-            color: var(--headline-color-on-color);
-            margin: 0.5em 0;
-        }
-        
-        footer a {
-            color: var(--nav-link-color);
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            .image-gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .image-gallery img {
-                max-width: 90%;
-            }
-            
-            nav a {
-                display: block;
-                padding: 0.8em;
-            }
-            
-            .challenges-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Iceberg&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-container">
     <header>
-        <img src="images/Defcon Logo.jpg" alt="DEFCON Logo" style="max-height: 80px; margin-bottom: 1em;">
+        <img src="images/Defcon Logo.jpg" alt="DEFCON Logo">
         <h1>DEFCON 2025</h1>
     </header>
     
@@ -206,12 +20,12 @@
     </nav>
     
     <main>
-        <section class="page-title">
+        <section class="hero-section">
             <h2>DEFCON 2025 Challenges</h2>
-        </section>
-        
-        <section class="intro-section">
-            <p>The DEFCON 2025 Challenges are designed to test your cybersecurity skills. Participate in Capture the Flag (CTF) competitions, lockpicking workshops, and social engineering exercises. Compete against the best in the field and push your limits in these real-world hacking scenarios. Check the schedule for challenge locations and registration details.</p>
+            <div class="dates-info">
+                <h3>Test Your Skills</h3>
+                <p>Participate in Capture the Flag (CTF) competitions, lockpicking workshops, and social engineering exercises. Compete against the best in the field and push your limits in these real-world hacking scenarios.</p>
+            </div>
         </section>
         
         <div class="image-gallery">
@@ -251,7 +65,7 @@
             </div>
         </section>
         
-        <section class="schedule-info">
+        <section class="event-highlights">
             <h3>Registration & Schedule Information</h3>
             <p>Challenge registration opens daily at 9:00 AM at each village. Some challenges require pre-registration due to limited capacity. Check the official schedule board for real-time updates and room assignments.</p>
             <p><strong>Pro Tip:</strong> Arrive early for popular challenges and bring your own laptop with essential tools pre-installed!</p>
